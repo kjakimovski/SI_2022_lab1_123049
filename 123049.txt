@@ -1,0 +1,60 @@
+ 
+git clone git@github.com:kjakimovski/SI_2022_lab1_123049.git
+
+nano shopping_list.txt
+git status
+git add *
+git commit -m "Add 5 items to the shopping list"
+git push origin master
+
+git status
+nano shopping_list.txt
+git add * 
+git commit -m "Add quantities to the items."
+git push origin master
+git status
+
+git branch branch1
+git branch branch2
+
+git checkout branch1
+git merge master
+git push origin branch1
+
+git checkout branch2
+git merge master
+git push origin branch2
+
+git checkout branch1
+nano shopping_list.txt
+git add *
+git commit -m "Change quantity of item #5"
+git push origin branch1
+git status
+
+git checkout master
+nano shopping_list.txt
+git add *
+git commit -m "Change quantity of item #2"
+git push origin master
+git status
+
+git checkout branch2
+nano shopping_list.txt
+git add *
+git commit -m "Modify item #4"
+git push origin branch2
+git status
+
+nano shopping_list.txt
+git add *
+git commit -m "Modify item #4 and add item #6"
+git push origin branch2
+
+git checkout master
+git merge branch1
+git push origin master
+
+git merge branch2
+nano shopping_list.txt
+git push origin master
